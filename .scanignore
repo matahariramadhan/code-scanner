@@ -1,0 +1,5 @@
+.venv/
+.pytest_cache/
+output.txt
+__pycache__/
+.git/

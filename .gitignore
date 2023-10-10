@@ -1,0 +1,4 @@
+.venv/
+.pytest*/
+output.txt
+__pycache__/
