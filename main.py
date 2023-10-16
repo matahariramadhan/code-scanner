@@ -10,7 +10,11 @@ def main():
                         help="Output text file name. (default: output.txt)")
     parser.add_argument("-e", "--exclude", nargs="*",
                         default=[], help="Patterns to exclude files.")
-    args = parser.parse_args()
+    args, unknown_args = parser.parse_known_args()
+
+    if '--help' in unknown_args:
+        parser.print_help()
+        return
 
     folder_path: str = args.folder_path
     output_file: str = args.output
