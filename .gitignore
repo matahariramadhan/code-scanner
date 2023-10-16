@@ -3,3 +3,5 @@
 output.txt
 __pycache__/
 *vscode*/
+dist/
+*egg-info/
